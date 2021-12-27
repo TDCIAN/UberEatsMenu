@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selectedOption: MenuBarOptions = .japanese
     var body: some View {
         VStack {
             HStack(spacing: 16) {
@@ -35,6 +36,7 @@ struct ContentView: View {
             .foregroundColor(Color.black)
             
             // menu options list
+            MenuOptionsList(selectedOption: $selectedOption)
             
         }
     }

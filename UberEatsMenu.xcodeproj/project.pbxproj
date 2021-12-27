@@ -12,6 +12,8 @@
 		1EC263B32779FFEE00B81AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC263B22779FFEE00B81AD9 /* Assets.xcassets */; };
 		1EC263B62779FFEE00B81AD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC263B52779FFEE00B81AD9 /* Preview Assets.xcassets */; };
 		1EC263BD277A014E00B81AD9 /* MenuBarOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC263BC277A014E00B81AD9 /* MenuBarOptions.swift */; };
+		1EC263BF277A01F700B81AD9 /* MenuOptionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC263BE277A01F700B81AD9 /* MenuOptionsList.swift */; };
+		1EC263C1277A040B00B81AD9 /* MenuItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC263C0277A040B00B81AD9 /* MenuItemSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		1EC263B22779FFEE00B81AD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EC263B52779FFEE00B81AD9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1EC263BC277A014E00B81AD9 /* MenuBarOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarOptions.swift; sourceTree = "<group>"; };
+		1EC263BE277A01F700B81AD9 /* MenuOptionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptionsList.swift; sourceTree = "<group>"; };
+		1EC263C0277A040B00B81AD9 /* MenuItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 				1EC263B22779FFEE00B81AD9 /* Assets.xcassets */,
 				1EC263B42779FFEE00B81AD9 /* Preview Content */,
 				1EC263BC277A014E00B81AD9 /* MenuBarOptions.swift */,
+				1EC263BE277A01F700B81AD9 /* MenuOptionsList.swift */,
+				1EC263C0277A040B00B81AD9 /* MenuItemSection.swift */,
 			);
 			path = UberEatsMenu;
 			sourceTree = "<group>";
@@ -141,7 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EC263B12779FFEC00B81AD9 /* ContentView.swift in Sources */,
+				1EC263BF277A01F700B81AD9 /* MenuOptionsList.swift in Sources */,
 				1EC263AF2779FFEC00B81AD9 /* UberEatsMenuApp.swift in Sources */,
+				1EC263C1277A040B00B81AD9 /* MenuItemSection.swift in Sources */,
 				1EC263BD277A014E00B81AD9 /* MenuBarOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
