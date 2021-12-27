@@ -33,6 +33,9 @@ struct ContentView: View {
             }
             .padding(.horizontal)
             .foregroundColor(Color.black)
+            
+            // menu options list
+            
         }
     }
 }
