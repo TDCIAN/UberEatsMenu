@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MenuOptionsList: View {
     @Binding var selectedOption: MenuBarOptions
+    @Binding var currentOption: MenuBarOptions
     @Namespace var animation
     
     var body: some View {
@@ -18,9 +19,9 @@ struct MenuOptionsList: View {
                     ForEach(MenuBarOptions.allCases, id: \.self) { item in
                         VStack {
                             Text(item.title)
-                                .foregroundColor(item == selectedOption ? .black : .gray)
+                                .foregroundColor(item == currentOption ? .black : .gray)
                             
-                            if selectedOption == item {
+                            if currentOption == item {
                                 Capsule()
                                     .fill(.black)
                                     .matchedGeometryEffect(id: "item", in: animation)
@@ -39,6 +40,9 @@ struct MenuOptionsList: View {
                                 proxy.scrollTo(item, anchor: .topTrailing)
                             }
                         }
+                    }
+                    .onChange(of: currentOption) { _ in
+                        proxy.scrollTo(currentOption, anchor: .topTrailing)
                     }
                 }
             }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MenuItemSection: View {
     let option: MenuBarOptions
+    @Binding var currentOption: MenuBarOptions
     
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
@@ -47,5 +48,6 @@ struct MenuItemSection: View {
                 
             }
         }
+        .modifier(OffsetModifier(option: option, currentOption: $currentOption))
     }
 }

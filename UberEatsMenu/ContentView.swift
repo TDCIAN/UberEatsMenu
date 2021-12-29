@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selectedOption: MenuBarOptions = .japanese
+    @State private var currentOption: MenuBarOptions = .japanese
+    
     var body: some View {
         VStack {
             HStack(spacing: 16) {
@@ -36,7 +38,7 @@ struct ContentView: View {
             .foregroundColor(Color.black)
             
             // menu options list
-            MenuOptionsList(selectedOption: $selectedOption)
+            MenuOptionsList(selectedOption: $selectedOption, currentOption: $currentOption)
                 .padding([.top, .horizontal])
                 .overlay(
                     Divider()
@@ -48,7 +50,7 @@ struct ContentView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack {
                         ForEach(MenuBarOptions.allCases, id: \.self) { option in
-                            MenuItemSection(option: option)
+                            MenuItemSection(option: option, currentOption: $currentOption)
                         }
                     }
                     .onChange(of: selectedOption, perform: { _ in
@@ -58,8 +60,10 @@ struct ContentView: View {
                     })
                     .padding(.horizontal)
                 }
+                .coordinateSpace(name: "scroll")
             }
         }
+        .padding(.top)
     }
 }
 
