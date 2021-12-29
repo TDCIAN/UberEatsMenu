@@ -23,4 +23,19 @@ enum MenuBarOptions: Int, CaseIterable {
         case .fancy: return "Fancy"
         }
     }
+    
+    var foodItems: [FoodItem] {
+        switch self {
+        case .japanese:
+            return japaneseFood
+        case .american:
+            return americanFood
+        case .italian:
+            return italianFood
+        case .promotions:
+            return japaneseFood + italianFood
+        case .fancy:
+            return italianFood
+        }
+    }
 }
