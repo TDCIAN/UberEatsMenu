@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EAEE483277BECE80038B6F6 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAEE482277BECE80038B6F6 /* FoodItem.swift */; };
 		1EC263AF2779FFEC00B81AD9 /* UberEatsMenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC263AE2779FFEC00B81AD9 /* UberEatsMenuApp.swift */; };
 		1EC263B12779FFEC00B81AD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC263B02779FFEC00B81AD9 /* ContentView.swift */; };
 		1EC263B32779FFEE00B81AD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC263B22779FFEE00B81AD9 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EAEE482277BECE80038B6F6 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		1EC263AB2779FFEC00B81AD9 /* UberEatsMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberEatsMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC263AE2779FFEC00B81AD9 /* UberEatsMenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberEatsMenuApp.swift; sourceTree = "<group>"; };
 		1EC263B02779FFEC00B81AD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				1EC263BC277A014E00B81AD9 /* MenuBarOptions.swift */,
 				1EC263BE277A01F700B81AD9 /* MenuOptionsList.swift */,
 				1EC263C0277A040B00B81AD9 /* MenuItemSection.swift */,
+				1EAEE482277BECE80038B6F6 /* FoodItem.swift */,
 			);
 			path = UberEatsMenu;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				1EC263BF277A01F700B81AD9 /* MenuOptionsList.swift in Sources */,
 				1EC263AF2779FFEC00B81AD9 /* UberEatsMenuApp.swift in Sources */,
 				1EC263C1277A040B00B81AD9 /* MenuItemSection.swift in Sources */,
+				1EAEE483277BECE80038B6F6 /* FoodItem.swift in Sources */,
 				1EC263BD277A014E00B81AD9 /* MenuBarOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
